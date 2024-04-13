@@ -33,17 +33,17 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 	<title>All Affordable Plumbing Inc.</title>
 
-	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/favicon-16x16.png" sizes="16x16">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 	<!-- Add Following Select2 Style if you're using select2 selector; This is a basic style please use sass to add your own css for select2 -->
-	<!-- <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/css/select2.min.css"> -->
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/vendor/datetimepicker/jquery.datetimepicker.min.css">
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/vendor/slick/slick.css">
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/css/style.css">
+	<!-- <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/css/select2.min.css"> -->
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/vendor/datetimepicker/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/vendor/slick/slick.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/css/style.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
 			<div class="container">
 				<div class="site-header__inner">
 					<div class="site-logo ">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/logo.png" alt="Header logo" width="204" height="80" loading="lazy">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/logo.png" alt="Header logo" width="204" height="80" loading="lazy">
 					</div> <!-- / .site-logo -->
 
 					<nav class="site-nav order-2 order-lg-1">
@@ -83,7 +83,7 @@
 		<main id="main" class="site-content">
 
 			<section class="banner bg-cover">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/banner-img.jpg" alt="About image" width="1440" height="596" loading="lazy">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/banner-img.jpg" alt="About image" width="1440" height="596" loading="lazy">
 				<div class="container">
 					<div class="banner-content">
 						<h1>A Healthy Life <br> Needs <span class="text-primary mb-0">Clean Pipes!</span> </h1>
@@ -100,7 +100,7 @@
 				<div class="container">
 					<div class="form-primary block-width-1050xxl mx-auto">
 
-						<form method="POST" action="<?php echo get_stylesheet_directory_uri(); ?>/aplp/mailer/index.php" id="form-id-0" class="validate form">
+						<form method="POST" action="<?php echo get_stylesheet_directory_uri(); ?>/lp/mailer/index.php" id="form-id-0" class="validate form">
 							<div class="form-header text-center mb-lg-2">
 								<h2 class="h3">Contact me</h2>
 								<p>We will get back to you!</p>
@@ -202,9 +202,9 @@
 					<div class="row">
 						<div class="col-lg-6 pr-xl-2 pr-xxl-3">
 							<picture class="mb-1 mb-lg-0 w-full">
-								<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/about-img.webp" type="image/webp">
-								<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/about-img.jpg" type="image/jpg">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/about-img.jpg" alt="About image" width="592" height="611" loading="lazy">
+								<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/about-img.webp" type="image/webp">
+								<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/about-img.jpg" type="image/jpg">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/about-img.jpg" alt="About image" width="592" height="611" loading="lazy">
 							</picture>
 						</div>
 						<div class="col-lg-6 pr-xl-3 pr-xxl-5">
@@ -249,9 +249,9 @@
 										<p>Nothing can fix these pipes, they need to be replaced.</p>
 									</div>
 									<picture class="w-full">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img01.webp" type="image/webp">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img01.jpg" type="image/jpg">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img01.jpg" alt="Service image" width="465" height="236" loading="lazy">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img01.webp" type="image/webp">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img01.jpg" type="image/jpg">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img01.jpg" alt="Service image" width="465" height="236" loading="lazy">
 									</picture>
 								</div> <!-- /.card-media -->
 							</div>
@@ -262,9 +262,9 @@
 										<p>PEX /copper pipes</p>
 									</div>
 									<picture class="w-full">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img02.webp" type="image/webp">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img02.jpg" type="image/jpg">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/service-img02.jpg" alt="Service image" width="465" height="236" loading="lazy">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img02.webp" type="image/webp">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img02.jpg" type="image/jpg">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/service-img02.jpg" alt="Service image" width="465" height="236" loading="lazy">
 									</picture>
 								</div> <!-- /.card-media -->
 							</div>
@@ -274,10 +274,10 @@
 			</section> <!-- /.services -->
 
 			<section class="info bg-cover pb-2 pb-sm-3 pb-lg-4 pb-xl-5">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/bg-shape.jpg" alt="Service image" width="1440" height="538" loading="lazy">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/bg-shape.jpg" alt="Service image" width="1440" height="538" loading="lazy">
 				<div class="container">
 					<div class="bg-cover overlay py-2 px-2 pl-lg-3 pl-xl-5 mt-n88">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/bg-img.jpg" alt="Service image" width="1280" height="547" loading="lazy">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/bg-img.jpg" alt="Service image" width="1280" height="547" loading="lazy">
 						<div class="row align-items-end">
 							<div class="col-lg-6 pr-xxl-3">
 								<div class="left-content">
@@ -319,9 +319,9 @@
 								<q>All Affordable Plumbing did a fantastic job on a while house re-piping job. So glad we hired them. I got multiple estimates, but I felt best about them and I was absolutely right. Hire this company - you won't be dissappointed.</q>
 								<address class="author">
 									<!-- <picture class="author-img">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/machal-wincent.webp" type="image/webp">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/machal-wincent.jpg" type="image/jpg">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/machal-wincent.jpg" alt="Author image" width="101" height="151" loading="lazy">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/machal-wincent.webp" type="image/webp">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/machal-wincent.jpg" type="image/jpg">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/machal-wincent.jpg" alt="Author image" width="101" height="151" loading="lazy">
 									</picture> -->
 									<cite class="author-info">
 										<strong>Aimee Schneider</strong>
@@ -335,9 +335,9 @@
 								<q>We hired these plumbers to do a whole house re-piping. What set them apart from the start was they did it all: demo drywell to get to pipes and replace them on day 1; put deywall back up on day 2. We got 4 estimates and the bill was very fair. My husband liked their efficiency, I loved that Horatio (owner) and the men he briught into my home were perfect gentlemen. We recommend them without reservation.</q>
 								<address class="author">
 									<!-- <picture class="author-img">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.webp" type="image/webp">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.jpg" type="image/jpg">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.jpg" alt="Author image" width="63" height="94" loading="lazy">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.webp" type="image/webp">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.jpg" type="image/jpg">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.jpg" alt="Author image" width="63" height="94" loading="lazy">
 									</picture> -->
 									<cite class="author-info">
 										<strong>Elizabeth K</strong>
@@ -352,9 +352,9 @@
 								<q>The bathroom remodel is gorgeous! It is better than I could have ever imagined. The tile work is beautiful. Horatio and his tile team had great advice for product selection and design. The estimate I was given was spot on and extremely reasonable. I couln't be happier. It look about two weeks start to finish, including working a full Saturday. No short cuts, all high quality work.</q>
 								<address class="author">
 									<!-- <picture class="author-img">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.webp" type="image/webp">
-										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.jpg" type="image/jpg">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/author-img.jpg" alt="Author image" width="63" height="94" loading="lazy">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.webp" type="image/webp">
+										<source srcset="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.jpg" type="image/jpg">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/author-img.jpg" alt="Author image" width="63" height="94" loading="lazy">
 									</picture> -->
 									<cite class="author-info">
 										<strong>Traci Hulback</strong>
@@ -391,7 +391,7 @@
 					<div class="row">
 						<div class="col-sm-6 col-lg-4 pr-xl-3 mb-1">
 							<figure class="logo-wrapper mb-1 mb-xl-2">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/images/footer-logo.png" alt="All Affordable Plumbing Logo" width="191" height="68" loading="lazy">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/images/footer-logo.png" alt="All Affordable Plumbing Logo" width="191" height="68" loading="lazy">
 							</figure>
 							<p>Local family owned and operated plumbing contractor who is dedicated to providing the highest quality services available.</p>
 						</div>
@@ -440,15 +440,15 @@
 
 	</div> <!-- /.site-wrapper -->
 
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/jquery.min.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/underscore-min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/jquery.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/underscore-min.js"></script>
 	<!-- Add Following Select2 Style if you're using select2 selector; -->
-	<!-- <script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/select2.min.js"></script> -->
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/validate.min.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/builder.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/vendor/datetimepicker/jquery.datetimepicker.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/vendor/slick/slick.min.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/aplp/assets/js/main.js"></script>
+	<!-- <script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/select2.min.js"></script> -->
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/validate.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/builder.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/vendor/datetimepicker/jquery.datetimepicker.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/vendor/slick/slick.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/lp/assets/js/main.js"></script>
 
 
 	<!-- Add Following Script If reCaptcha V2 is Enabled; Otherwise remove the whole block -->

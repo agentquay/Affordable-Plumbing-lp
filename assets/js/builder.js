@@ -1,5 +1,5 @@
 var $recaptchaV2SiteKey = '6Lcz0s4UAAAAAAUeszI6pjSO9aW8ZZwODz73VxzQ';
-var sendMailURL = 'https://www.allaffordable.org/wp-content/themes/all-affordable-plumbing/aplp/mailer/index.php';
+var sendMailURL = 'https://www.allaffordable.org/wp-content/themes/all-affordable-plumbing/lp/mailer/index.php';
 var form_fields = [];
 var sections = [];
 form_fields['form-id-0'] = {
