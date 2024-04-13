@@ -1,0 +1,65 @@
+.list {
+    li {
+        position: relative;
+        padding-left: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 14px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 20px;
+                padding-left: 22px;
+            }
+        }
+    
+        &::before {
+            position: absolute;
+            content: '\e912';
+            font-family: 'icomoon';
+            font-size: 10px;
+            top: 5px;
+            left: 0;
+
+            @include media-breakpoint-up(lg) {
+                top: 7px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 12px;
+                top: 8px;
+            }
+        }
+    }
+    
+    
+    &-icon {
+        li {
+            position: relative;
+            padding-right: 15px;
+            display: inline-block;
+
+            @include media-breakpoint-up(lg) {
+                padding-right: 15px;
+            }
+
+            a {
+                border: 1px solid $white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+
+                @include media-breakpoint-up(xl) {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}

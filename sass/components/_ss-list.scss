@@ -1,0 +1,95 @@
+.list {
+    li {
+        position: relative;
+        padding-left: 23px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 14px;
+            }
+        }
+    
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: $blue-100;
+            width: 10px;
+            height: 10px;
+            top: 6px;
+            left: 0;
+            border-radius: 50%;
+        }
+    }
+
+    &-lg {
+        li {
+            position: relative;
+            padding-left: 23px;
+            @include font-size(1.375rem);
+            font-family: $font-roboto;
+            font-weight: 700;
+            color: $white;
+        
+            &::before {
+                position: absolute;
+                content: '';
+                background-color: $blue-100;
+                width: 13px;
+                height: 13px;
+                top: 10px;
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    
+    &-icon {
+        li {
+            position: relative;
+            color: rgba($white, 0.6);
+            @include font-size(18px);
+            padding-left: 38px;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 45px;
+                @include font-size(20px);
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-left: 56px;
+                @include font-size(1.4375rem);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 12px;
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 16px;
+                }
+
+                @include media-breakpoint-up(xl)  {
+                    margin-bottom: 29px;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: '\e905';
+                font-family: 'icomoon';
+                left: 0;
+                top: 2px;
+                @include font-size(32px);
+                color: $blue-100;
+                line-height: 1;
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(2.625rem);
+                    top: -3px;
+                }
+            }
+        }
+    }
+}

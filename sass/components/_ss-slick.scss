@@ -1,0 +1,115 @@
+.slick {
+    &-arrow {
+        position: absolute;
+        color: $white;
+        border: 0;
+        background-color: $primary;
+        transition: $transition-base;
+        font-size: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        // margin: 0 8px;
+        // padding: 0;
+        width: 44px;
+        height: 44px;
+
+        @include media-breakpoint-down(md) {
+            top: auto;
+            transform: none;
+            bottom: 0;
+            margin: 0 5px;
+            width: 34px;
+            height: 34px;
+        }
+
+        &:before {
+            font-family: 'Icomoon';
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &-prev {
+        // z-index: 1;
+        left: 0;
+
+        &:before {
+            content: '\e908';
+        }
+
+        @include media-breakpoint-down(md) {
+            right: 50%;
+            left: auto;
+        }
+    }
+
+    &-next {
+        right: 0;
+
+        @include media-breakpoint-down(md) {
+            left: 50%;
+            right: auto;
+        }
+
+        &:before {
+            content: '\e903';
+        }
+    }
+
+    &-disabled {
+        cursor: not-allowed !important;
+        background-color: rgba($black, 0.67);
+    }
+
+    &-dots {
+        list-style: none;
+        margin: 27px 0 0;
+        line-height: 1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 3px;
+            text-indent: -999rem;
+            background-color: rgba($dark-cyan-1, 0.15);
+            width: 25px;
+            height: 4px;
+            border-radius: 90px;
+            cursor: pointer;
+            position: relative;
+            transition: all .2s;
+
+
+            &:hover,
+            &.slick-active {
+                background-color: $dark-cyan-1;
+                width: 51px;
+            }
+        }
+    }
+}
+
+// .slick-same-height {
+//     @include media-breakpoint-up(md) {
+//         .slick {
+//             &-track {
+//                 display: flex;
+//             }
+
+//             &-slide {
+//                 height: inherit;
+//             }
+//         }
+//     }
+// }

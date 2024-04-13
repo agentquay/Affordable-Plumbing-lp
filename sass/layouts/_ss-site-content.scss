@@ -1,0 +1,303 @@
+//Banner
+.banner {
+    position: relative;
+    z-index: 0;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+        min-height: 596px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        background: -moz-linear-gradient(left, rgba(13, 23, 26, 1) 0%, rgba(13, 23, 26, 1) 17%, rgba(13, 23, 26, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(13, 23, 26, 1) 0%, rgba(13, 23, 26, 1) 17%, rgba(13, 23, 26, 0) 100%);
+        background: linear-gradient(to right, rgba(13, 23, 26, 1) 0%, rgba(13, 23, 26, 1) 17%, rgba(13, 23, 26, 0) 100%);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &-content {
+        color: rgba($white, 0.7);
+        max-width: 600px;
+        padding: 2rem 0;
+
+        h1 {
+            color: $white;
+            margin-bottom: 20px;
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        span {
+            margin-bottom: 12px;
+            display: block;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 16px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+//About
+
+.about {
+    position: relative;
+
+    picture,
+    figure {
+        @include media-breakpoint-down(lg) {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+    &-content {
+        p {
+            color: $black;
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 21px;
+            }
+        }
+
+        ul {
+            @include media-breakpoint-down(lg) {
+                display: inline-block;
+            }
+
+            li {
+                @include media-breakpoint-down(lg) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .heading {
+        @include font-size(12.5rem);
+        transform-origin: top right;
+        left: auto;
+        right: 0;
+        top: 50%;
+        transform: rotate(90deg) translateX(50%);
+
+        @include media-breakpoint-up(xxl) {
+            right: 20px;
+        }
+    }
+}
+
+//Services
+.services {
+    position: relative;
+
+    .heading {
+
+        @include media-breakpoint-up(lg) {
+            -webkit-text-stroke: 1px rgba($gray-500, 0.13);
+            color: $gray-100;
+        }
+    }
+
+    .header {
+        @include media-breakpoint-up(lg) {
+            position: relative;
+            top: -35px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: -45px;
+        }
+    }
+}
+
+//Info
+.info {
+    margin-top: 80px;
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 105px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 152px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 180px;
+    }
+
+    .left-content {
+        padding-bottom: 16px;
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 32px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 55px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 70px;
+        }
+    }
+
+    .right-content {
+        padding: 16px;
+
+        @include media-breakpoint-up(md) {
+            padding: 32px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 48px 36px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 64px 36px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 80px 36px;
+        }
+    }
+}
+
+//Testimonial
+.testimonial {
+    position: relative;
+
+    .header {
+        @include media-breakpoint-up(lg) {
+            position: relative;
+            top: -5px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: -30px;
+        }
+    }
+
+    &-slider {
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 70px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 60px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 80px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 0 116px;
+        }
+
+        .slick {
+            &-list {
+                margin: 0 -19px;
+            }
+
+            &-slide {
+                padding: 18px 19px;
+            }
+
+            &-dots {
+                @include media-breakpoint-down(md) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+.blockquote-card {
+    box-shadow: 0 10px 40px rgba($black, 0.04);
+    border-radius: 2px;
+    margin-bottom: 0;
+    padding: 20px;
+    height: 100%;
+
+    @include media-breakpoint-up(xl) {
+        padding: 28px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 36px 41px;
+    }
+
+    q {
+        display: block;
+        margin-bottom: 1rem;
+
+        &:before,
+        &::after {
+            content: none;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 30px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 40px;
+        }
+
+        &-img {
+            width: 50px;
+            height: 50px;
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
+        &-info {
+            width: calc(100% - 50px);
+            // padding-left: 19px;
+            font-style: normal;
+
+            strong {
+                font-family: $font-roboto-condensed;
+                color: $black;
+                @include font-size(1.25rem);
+            }
+
+            span {
+                display: block;
+            }
+        }
+    }
+}

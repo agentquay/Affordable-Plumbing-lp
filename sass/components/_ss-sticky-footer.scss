@@ -1,0 +1,46 @@
+.sticky-footer {
+    position: fixed;
+    background-color: $white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.625rem 0.875rem;
+    box-shadow: rgba($black, 0.16) 0px 7px 29px 0px;
+    z-index: 1;
+
+    @include media-breakpoint-up(xl) {
+        padding: 10px 0;
+    }
+
+    a {
+        @include font-size(1rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.125rem);
+            line-height: 1.8;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    i {
+        @include media-breakpoint-down(sm) {
+            margin-right: 0.625rem;
+            display: inline-block;
+        }
+    }
+
+    .call-text {
+        margin: 0 0.625rem;
+        font-weight: 400;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}

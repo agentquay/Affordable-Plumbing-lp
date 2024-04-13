@@ -1,0 +1,240 @@
+.site-footer {
+    background-color: rgba($dark-cyan-2, 0.97);
+    color: rgba($white, 0.6);
+    margin-top: 61px;
+    margin-bottom: 44px;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 52px;
+    }
+
+    .footer {
+        &-top {
+            background-color: $primary;
+            color: $white;
+            padding: 16px;
+            margin-top: -61px;
+
+            @include media-breakpoint-up(md) {
+                padding: 22px 48px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 28px 48px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 34px 64px;
+            }
+
+            .has-underline {
+                position: relative;
+                padding-bottom: 3px;
+                display: inline-block;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-color: $white;
+                    bottom: 0;
+                    left: 0;
+                    width: 188px;
+                    height: 1px;
+                }
+            }
+
+            h3 {
+                @include font-size(25px);
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(30px);
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    @include font-size(2rem);
+                }
+            }
+
+            .call-icon {
+                a {
+                    background-color: $dark-cyan-1;
+                    width: 50px;
+                    height: 50px;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include font-size(1.3125rem);
+                    margin: 0 auto;
+
+                    @include media-breakpoint-up(xl) {
+                        width: 64px;
+                        height: 64px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        transform: scale(1.1);
+                        opacity: .8;
+                    }
+                }
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    opacity: .7;
+                }
+            }
+        }
+
+        &-bottom {
+            padding: 2rem 0;
+            font-family: $font-avenir-book;
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 78px;
+                padding-bottom: 70px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 78px;
+                padding-bottom: 70px;
+            }
+
+            h5,
+            .h5 {
+                text-transform: uppercase;
+
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 20px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 30px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    margin-bottom: 40px;
+                    margin-top: 28px;
+                }
+
+            }
+
+            a {
+                color: rgba($white, 0.6);
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &-item {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        &-address {
+
+            span.address {
+                color: rgba($white, 0.6);
+                margin-bottom: 18px;
+                display: block;
+            }
+
+            .info-list {
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+
+                    a {
+                        padding-left: 10px;
+                        flex: 1 1 0;
+                    }
+
+                    i {
+                        flex: 0 0 auto;
+                        width: 32px;
+                        height: 32px;
+                        background-color: $primary;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 90px;
+
+                        @include media-breakpoint-up(xl) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        display: block;
+        font-family: $font-avenir-book;
+        padding-bottom: 23px;
+    }
+}
+
+.social-list {
+    @include media-breakpoint-up(lg) {
+        margin-top: 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 40px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 6px;
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 13px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-right: 20px;
+        }
+
+        a {
+            background-color: rgba($white, 0.09);
+            color: $white;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            @include font-size(1.0625rem);
+            text-decoration: none;
+
+            @include media-breakpoint-up(xl) {
+                width: 41px;
+                height: 41px;
+            }
+
+            &:hover {
+                background-color: $primary;
+                color: $white !important;
+            }
+        }
+    }
+}
